@@ -5,11 +5,13 @@
 #   is some modRana source code available
 #   to be package in ../modrana
 
+# make sure the PWD is consistent even if the script is called
+# from a different directory
+cd "$(dirname "$0")"
+
 APK_PATH=android-build/bin/QtApp-debug.apk
 OUTPUT_FOLDER=apks
-CURRENT_VERSION=`grep versionCode android/AndroidManifest.xml | sed -e 's/.*versionName\s*=\s*\"\([0-9.]*\)\".*/\1/g'`
-
-cd "$(dirname "$0")"
+CURRENT_VERSION=`grep versionCode ../android/AndroidManifest.xml | sed -e 's/.*versionName\s*=\s*\"\([0-9.]*\)\".*/\1/g'`
 
 cd ..
 

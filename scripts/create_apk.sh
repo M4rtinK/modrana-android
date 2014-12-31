@@ -15,6 +15,9 @@ CURRENT_VERSION=`grep versionCode ../android/AndroidManifest.xml | sed -e 's/.*v
 
 cd ..
 
+# generate the qrc manifest
+./qrcgen.py modrana "/"
+
 androiddeployqt --deployment bundled --android-platform android-14 --output android-build
 
 cp $APK_PATH ${OUTPUT_FOLDER}/modrana-latest.apk

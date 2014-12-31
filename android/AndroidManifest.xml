@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<manifest package="org.modrana.modrana" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="0.49.13" android:versionCode="1" android:installLocation="auto">
+<manifest package="org.modrana.modrana" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="0.50.1" android:versionCode="2" android:installLocation="auto">
   <application android:hardwareAccelerated="true" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:label="modRana" android:icon="@drawable/icon">
         <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|locale|fontScale|keyboard|keyboardHidden|navigation" android:name="org.qtproject.qt5.android.bindings.QtActivity" android:label="modRana" android:screenOrientation="unspecified" android:launchMode="singleTop">
             <intent-filter>

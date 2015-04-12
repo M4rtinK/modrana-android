@@ -43,7 +43,7 @@ rm -rf android-build
 echo "* running make install *"
 make INSTALL_ROOT=android-build install
 
-echo "* running creating apk *"
+echo "* creating apk *"
 androiddeployqt --deployment bundled --android-platform android-14 --output android-build
 
 echo "* moving resulting APKs to the apks folder *"
